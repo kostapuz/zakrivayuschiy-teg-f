@@ -26,6 +26,69 @@
   transform-origin: center;
 }
 
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--main-color);
+  transition: border 0.3s ease;
+}
+
+.like-icon {
+  .core {
+    fill: transparent;
+    transition: fill 0.3s 0.03s linear;
+  }
+  .main-body {
+    fill: transparent;
+    transition: fill 0.3s linear;
+  }
+  .contour {
+    transition: fill 0.01s linear;
+  }
+  .sparks {
+    opacity: 0;
+  }
+}
+
+.like-icon:hover {
+  .core {
+    fill: var(--main-color);
+    transition: fill 0.3s linear;
+  }
+  .main-body {
+    fill: var(--main-color);
+    transition: fill 0.3s 0.05s linear;
+  }
+}
+
+.like-icon:active {
+  .core {
+    fill: var(--is-liked-clr);
+    transition: fill 0.3s linear;
+  }
+  .main-body {
+    fill: var(--is-liked-clr);
+    transition: fill 0.3s 0.05s linear;
+  }
+}
+
+.like-icon.is-liked {
+  .contour {
+    fill: var(--is-liked-clr);
+    transition: fill 0.3s linear 0.06s;
+  }
+  .core {
+    fill: var(--is-liked-clr);
+    transition: fill 0.3s linear;
+  }
+  .main-body {
+    fill: var(--is-liked-clr);
+    transition: fill 0.3s linear;
+  }
+}
+
 @keyframes scale {
   from {
     scale: 1;

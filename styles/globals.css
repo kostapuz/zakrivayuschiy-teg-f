@@ -51,9 +51,3 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
-
-@media (width > 375px) {
-  .page {
-    max-inline-size: 700px;
-  }
-}

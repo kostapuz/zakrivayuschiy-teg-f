@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --main-font: "Inter-Variable";
-  --accent-font: "Press Start 2P-Regular", fantasy;
+  --main-font: "Inter";
+  --accent-font: "Press Start 2P", fantasy;
   --text-font-size: 18px;
   --button-font-size: 14px;
   --main-color: #000;
@@ -21,7 +21,7 @@
       transparent 4px
     ),
     repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a);
-  --text-stroke: rgba(255, 255, 255, 0.5);
+  --text-stroke: rgba(255, 255, 255, 1);
   --bttn-txt-clr: var(--bg-color);
   --is-liked-clr: red;
 }
